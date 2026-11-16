@@ -349,7 +349,7 @@
                 $.ajax({
     
                     type: "POST",
-                    url: "inc/sendEmail.php",
+                    url: "/Default/SendMessage",
                     data: $(form).serialize(),
                     beforeSend: function() { 
     
@@ -376,7 +376,7 @@
                     error: function() {
     
                         sLoader.slideUp("slow"); 
-                        $('.message-warning').html("Something went wrong. Please try again.");
+                        $('.message-warning').html("Bir hata oluştu, lütfen tekrar deneyin.");
                         $('.message-warning').slideDown("slow");
     
                     }

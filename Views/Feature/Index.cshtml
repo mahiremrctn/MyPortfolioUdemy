@@ -1,21 +1,21 @@
 ﻿@model Feature
 @{
-    ViewData["Title"] = "Hakkımda";
+    ViewData["Title"] = "Öne Çıkanlar";
     Layout = "~/Views/Layout/Index.cshtml";
 }
 <div class="content">
     <div class="container-fluid">
-        <h4 class="page-title">Hakkımda</h4>
+        <h4 class="page-title">Öne Çıkanlar</h4>
         <div class="card">
             <div class="card-header">
-                <div class="card-title">Hakkımda Bilgilerini Düzenle</div>
+                <div class="card-title">Ana Sayfa Karşılama Yazısını Düzenle</div>
             </div>
             <div class="card-body">
                 <form method="post">
                     <input type="hidden" asp-for="FeatureId" />
-                    <label>Başlık</label>
+                    <label>Karşılama Yazısı </label>
                     <input type="text" asp-for="Title" class="form-control" />
-                    <label>Alt Açıklama</label>
+                    <label>Ana Başlık</label>
                     <input type="text" asp-for="Description" class="form-control" />
                     <br />
                     <button class="btn btn-primary">Kaydet</button>

@@ -1,0 +1,26 @@
+﻿@model Feature
+@{
+    ViewData["Title"] = "Hakkımda";
+    Layout = "~/Views/Layout/Index.cshtml";
+}
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Hakkımda</h4>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">Hakkımda Bilgilerini Düzenle</div>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <input type="hidden" asp-for="FeatureId" />
+                    <label>Başlık</label>
+                    <input type="text" asp-for="Title" class="form-control" />
+                    <label>Alt Açıklama</label>
+                    <input type="text" asp-for="Description" class="form-control" />
+                    <br />
+                    <button class="btn btn-primary">Kaydet</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
